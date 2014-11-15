@@ -14,7 +14,7 @@ class Advisor{
 	
 	public static void main(String[] args){
 		Advisor advisor = new Advisor();
-		advisor.menu(); // add the buttons
+		//advisor.menu(); // add the buttons
 	} // main
 	
 	// setup the GUI
@@ -41,7 +41,10 @@ class Advisor{
 	} // prepareGUI
 	
 	// add the buttons
-	private void menu(){
+	/*changed to public as this caused an issue with other classes
+	 * 
+	 */
+	 void menu(){
 		// create the buttons
 		JButton students = new JButton("Students");
 		JButton records = new JButton("Records");
