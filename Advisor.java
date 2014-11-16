@@ -21,7 +21,7 @@ class Advisor{
 	
 	public static void main(String[] args){
 		Advisor advisor = new Advisor();
-		advisor.menu(); // add the buttons
+		//advisor.menu(); // add the buttons
 	} // main
 	
 	// setup the GUI
@@ -36,7 +36,22 @@ class Advisor{
 			}
 		});
 		
+<<<<<<< HEAD
 		mainPanel = new JPanel();
+=======
+		mainFrame.add(headerLabel); // add headerLabel to the mainFrame
+		mainFrame.add(mainPanel); // add mainPanel to the mainFrame
+		mainFrame.setVisible(true);	// show the mainFrame
+	} // prepareGUI
+	
+	// add the buttons
+	/*changed to public as this caused an issue with other classes
+	 * 
+	 */
+	 void menu(){
+		// create the buttons
+		JButton students = new JButton("Students");
+>>>>>>> 459b1c1234a0c1a18ff4957cf177f36c8058a719
 		JButton records = new JButton("Records");
 		records.setActionCommand("Records");
 		records.addActionListener(new ButtonClickListener());
